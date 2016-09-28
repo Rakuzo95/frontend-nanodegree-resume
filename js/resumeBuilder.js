@@ -14,11 +14,19 @@ var bio = {
 	"pictureURL" : pictureURL,
 	"welcomeMsg" : welcomeMsg,
 	"skills" : skills}
-// var awesomeThoughts = "I am " + name + " and I am awesome!";
-// console.log(awesomeThoughts);
 
-// var funThoughts = awesomeThoughts.replace("awesome","fun");
-// $("#main").append(funThoughts);
+var work = {};
+work.position = "Student";
+work.employer = "HARTING";
+work.years = 2;
+
+var education = {};
+education["name"] = "PHWT Oldenburg";
+education["years"] = 2;
+education["city"] = "Oldenburg";
+
+$("#main").append(work["position"]);
+$("#main").append(education.name);
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -30,6 +38,6 @@ var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 $("#header").append(formattedEmail);
-$("#header").append(formattedPicture);
+//$("#header").append(formattedPicture);
 $("#header").append(formattedWelcomeMsg);
 $("#header").append(formattedSkills);
