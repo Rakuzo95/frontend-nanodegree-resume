@@ -33,16 +33,34 @@ var projects = {
 }
 
 var bio = {
-	"name" : name,
-	"role" : role,
-	"email" : email,
-	"pictureURL" : pictureURL,
-	"welcomeMsg" : welcomeMsg,
-	"skills" : skills}
+	"name" : "Andreas Lautenschläger",
+	"role" : "Web Developer",
+	"contacts" : {
+		"mobile" : "+4917643309594",
+		"email" : "andreas.lschlaeger@gmail.com",
+		"github" : "Rakuzo95",
+		"location" : "Pr. Oldendorf"
+	}
+	"biopic" : "images/me.jpg",
+	"welcomeMsg" : "Willkommen!",
+	"skills" : [
+		"C++", "JavaScript", "Arduino"
+	]
+}
 
-
-
-var education = {};
-education["name"] = "PHWT Oldenburg";
-education["years"] = 2;
-education["city"] = "Oldenburg";
+var education = {
+	"schools" : [
+		{
+			"name" : "Söderblom Gymnasium",
+			"location" : "Espelkamp",
+			"degree dates" : "2014",
+			"url" : "http://www.soederblom.de/",
+		},
+		{
+			"name" : "PHWT",
+			"location" : "Oldenburg",
+			"degree dates" : "2018",
+			"url" : "http://www.phwt.de/",
+		}
+	]
+}
